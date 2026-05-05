@@ -2,14 +2,23 @@
 
 @theme inline {
   --color-ivory: #FFFAF5;
+  --color-cream: #F5EDE0;
+  --color-charcoal: #1A1A1A;
+  --color-sandstone: #D4C5A9;
+
+  /* Gold ramp — semantic, dark to light */
+  --color-gold-deep: #6A4F0E;
   --color-gold: #8B6914;
+  --color-gold-mid: #C9A24A;
+  --color-gold-soft: #E5BE6A;
+  --color-gold-line: #D4C5A9;
+  /* legacy alias — keep until full rename */
   --color-gold-light: #D4C5A9;
   --color-gold-dark: #6A4F0E;
+
+  /* Reserved for theme concept pages */
   --color-maroon: #6B1D1D;
   --color-maroon-deep: #4A1111;
-  --color-charcoal: #1A1A1A;
-  --color-cream: #F5EDE0;
-  --color-sandstone: #D4C5A9;
   --color-forest: #2D5016;
   --color-forest-deep: #1A3009;
   --color-amber: #C4841D;
@@ -19,7 +28,6 @@
 
   --font-display: "Cormorant Garamond", "Georgia", serif;
   --font-body: "DM Sans", "Helvetica Neue", sans-serif;
-  --font-accent: "Playfair Display", "Georgia", serif;
 }
 
 html {
@@ -34,4 +42,31 @@ body {
 ::selection {
   background-color: #8B6914;
   color: #FFFAF5;
+}
+
+@layer utilities {
+  .text-shadow-hero {
+    text-shadow: 0 2px 30px rgba(0, 0, 0, 0.35);
+  }
+  .text-shadow-body {
+    text-shadow: 0 1px 12px rgba(0, 0, 0, 0.5);
+  }
+  .text-shadow-mark {
+    text-shadow: 0 2px 24px rgba(0, 0, 0, 0.5);
+  }
+  .text-shadow-glow-gold {
+    text-shadow: 0 2px 24px rgba(229, 190, 106, 0.35),
+      0 1px 30px rgba(0, 0, 0, 0.5);
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
 }

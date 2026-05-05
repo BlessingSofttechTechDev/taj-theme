@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Cormorant_Garamond, DM_Sans, Playfair_Display } from "next/font/google";
+import { Cormorant_Garamond, DM_Sans } from "next/font/google";
 import "./globals.css";
 import ThemeSwitcher from "./components/ThemeSwitcher";
 
@@ -17,17 +17,10 @@ const dmSans = DM_Sans({
   display: "swap",
 });
 
-const playfair = Playfair_Display({
-  variable: "--font-accent",
-  subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
-  display: "swap",
-});
-
 export const metadata: Metadata = {
-  title: "Taj Ranthambhore Resort",
+  title: "AHPL — You belong here",
   description:
-    "A luxury resort where royalty meets the wild. Nestled near the Ranthambhore Tiger Reserve in Rajasthan, India.",
+    "AHPL is a Rajasthan-based hospitality development platform building destination-led hotels and resorts across India, beginning with a Taj-branded resort in Ranthambore.",
 };
 
 export default function RootLayout({
@@ -38,7 +31,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${cormorant.variable} ${dmSans.variable} ${playfair.variable} antialiased`}
+      className={`${cormorant.variable} ${dmSans.variable} antialiased`}
     >
       <body className="min-h-screen">
         {children}
