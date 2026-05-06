@@ -1152,14 +1152,9 @@ export default function Home() {
             </div>
           </form>
 
-          <div className="mt-14 grid md:grid-cols-3 gap-8 text-center">
+          <div className="mt-14 grid md:grid-cols-2 gap-8 text-center">
             {[
               { k: "General", v: "info@ahpl.in", note: "Domain pending" },
-              {
-                k: "Reservations",
-                v: "reservations@ahpl.in",
-                note: "Activates with booking flow",
-              },
               {
                 k: "Careers",
                 v: "careers@ahpl.in",
