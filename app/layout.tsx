@@ -18,7 +18,7 @@ const dmSans = DM_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "AHPL — You belong here",
+  title: "AHPL | You belong here",
   description:
     "AHPL is a Rajasthan-based hospitality development platform building destination-led hotels and resorts across India, beginning with a Taj-branded resort in Ranthambore.",
 };

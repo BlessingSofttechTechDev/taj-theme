@@ -98,7 +98,6 @@ const navLinks = [
   { label: "About", href: "#about" },
   { label: "Vision & Values", href: "#values" },
   { label: "Portfolio", href: "#portfolio" },
-  { label: "Leadership", href: "#leadership" },
   { label: "Our Group", href: "#group" },
   { label: "Media", href: "#media" },
   { label: "Contact", href: "#contact" },
@@ -145,7 +144,7 @@ const portfolio = {
     category: "Heritage · Wildlife Luxury",
     meta: "88 Keys · Taj-Branded",
     status: "Under Construction",
-    desc: "An 88-key Taj-branded resort under construction near one of India's most iconic wildlife destinations — envisioned as a refined destination stay that combines nature, comfort, and timeless hospitality.",
+    desc: "An 88-key Taj-branded resort under construction near one of India's most iconic wildlife destinations, envisioned as a refined destination stay that combines nature, comfort, and timeless hospitality.",
     image: "/effaro/aerial-render.jpg",
   },
   upcoming: [
@@ -153,75 +152,39 @@ const portfolio = {
       city: "Udaipur",
       character: "Lake-City Quarter",
       tag: "Upcoming Destination 01",
-      desc: "A converted land parcel in Rajasthan's storied lake city — earmarked for a leisure-led hospitality development.",
+      desc: "A converted land parcel in Rajasthan's storied lake city, earmarked for a leisure-led hospitality development.",
       image: "/effaro/palace-block.jpg",
     },
     {
       city: "Jawai",
       character: "Wilderness Frontier",
       tag: "Upcoming Destination 02",
-      desc: "A converted parcel on the edge of leopard country — a future wilderness retreat in advanced site evaluation.",
+      desc: "A converted parcel on the edge of leopard country. A future wilderness retreat in advanced site evaluation.",
       image: "/effaro/ranthambhore-landscape.jpg",
     },
     {
       city: "Pushkar",
       character: "Sacred Heart of Rajasthan",
       tag: "Upcoming Destination 03",
-      desc: "A converted parcel near the ghats and fairgrounds — earmarked for a culture- and pilgrimage-led destination stay.",
+      desc: "A converted parcel near the ghats and fairgrounds, earmarked for a culture and pilgrimage-led destination stay.",
       image: "/effaro/garden-pavilion.jpg",
     },
     {
       city: "Jaipur",
       character: "Capital Estate I",
       tag: "Upcoming Destination 04",
-      desc: "A converted parcel in the Pink City — the first of two Jaipur land holdings being readied for hospitality development.",
+      desc: "A converted parcel in the Pink City. The first of two Jaipur land holdings being readied for hospitality development.",
       image: "/effaro/palace-courtyard.jpg",
     },
     {
       city: "Jaipur",
       character: "Capital Estate II",
       tag: "Upcoming Destination 05",
-      desc: "The second Jaipur parcel — held in reserve for a future destination project as the platform expands.",
+      desc: "The second Jaipur parcel, held in reserve for a future destination project as the platform expands.",
       image: "/effaro/twilight-villas.jpg",
     },
   ],
 };
-
-const leadership = [
-  {
-    name: "Mr. Abhishek Singh",
-    role: "Chairman",
-    image: "/director-abhishek.jpg",
-    initials: "AS",
-    bio: [
-      "Mr. Abhishek Singh is one of the driving forces behind AHPL, steering the platform's hospitality ambition with a long-term, asset-backed mindset. He brings deep entrepreneurial discipline drawn from a family ecosystem with three decades of experience across commodities, real estate development and project execution.",
-      "A forward-looking operator, Mr. Abhishek travels widely — from heritage hotels in Europe to boutique resorts across South-East Asia — keeping AHPL aligned with global standards in design, guest experience and operational excellence.",
-      "Under his guidance, AHPL is shaping a new generation of destination-led hospitality assets across Rajasthan, beginning with the Taj-branded resort in Ranthambore.",
-    ],
-  },
-  {
-    name: "Mr. Vibhishek Singh",
-    role: "Chairman",
-    image: "/director-vibhishek.jpg",
-    initials: "VS",
-    bio: [
-      "Mr. Vibhishek Singh anchors AHPL's market-facing strategy and stakeholder relationships. He is a commerce graduate from the University of Mumbai and brings a sharp marketing mind to every conversation around brand, partnership and community.",
-      "He believes in empowering the regions where AHPL operates — designing developments that bring measurable change to the lives and livelihoods of communities surrounding each property.",
-      "His thinking has helped position AHPL as a credible, modern hospitality platform — capable of partnering with global brands while staying rooted in Rajasthan's character.",
-    ],
-  },
-  {
-    name: "Mr. Raunak Singh",
-    role: "Director",
-    image: null,
-    initials: "RS",
-    bio: [
-      "Mr. Raunak Singh joins the AHPL board with a focus on execution rigour and the next generation of platform growth. He plays a central role in evaluating sites, partners and operating frameworks across the AHPL pipeline.",
-      "His remit cuts across project planning, brand alignment and the disciplined development of AHPL's converted land parcels into a portfolio of destination-led hospitality assets.",
-      "Together with the chairmen, he is helping shape AHPL into a hospitality business that is asset-backed, guest-first and institutionally scalable.",
-    ],
-  },
-];
 
 /* ─────────────────── page ─────────────────── */
 
@@ -303,7 +266,7 @@ export default function Home() {
         <motion.div style={{ scale: heroScale }} className="absolute inset-0">
           <Image
             src="/effaro/hero-palace.jpg"
-            alt="AHPL flagship — Taj Ranthambore arrival court"
+            alt="AHPL flagship, Taj Ranthambore arrival court"
             fill
             sizes="100vw"
             priority
@@ -371,7 +334,7 @@ export default function Home() {
               className="text-ivory/80 text-sm md:text-base max-w-2xl mt-7 md:mt-9 leading-relaxed font-light text-shadow-body"
             >
               AHPL is building a portfolio of thoughtfully designed hospitality
-              assets across Rajasthan — beginning with a Taj-branded resort in
+              assets across Rajasthan, beginning with a Taj-branded resort in
               Ranthambore and a pipeline of converted land parcels across five
               cities.
             </motion.p>
@@ -505,7 +468,7 @@ export default function Home() {
                 <div className="relative aspect-[4/3] overflow-hidden">
                   <Image
                     src="/effaro/palace-courtyard.jpg"
-                    alt="Taj Ranthambore — palace courtyard render"
+                    alt="Taj Ranthambore palace courtyard render"
                     fill
                     sizes="(max-width: 768px) 100vw, 40vw"
                     className="object-cover"
@@ -537,7 +500,7 @@ export default function Home() {
               <div className="flex items-start gap-3 pt-3 text-[10px] tracking-[0.3em] uppercase text-charcoal/55">
                 <span className="text-gold mt-0.5">/</span>
                 <span>
-                  Renders &mdash; Taj Ranthambore <br />
+                  Renders / Taj Ranthambore <br />
                   Sawai Madhopur, Rajasthan
                 </span>
               </div>
@@ -554,9 +517,9 @@ export default function Home() {
                   partnerships and a long-term asset-management mindset.
                 </p>
                 <p>
-                  Our first flagship is a Taj-branded resort in Ranthambore —
+                  Our first flagship is a Taj-branded resort in Ranthambore,
                   one of India&apos;s most sought-after wildlife and leisure
-                  destinations — currently under construction and envisioned as
+                  destinations, currently under construction and envisioned as
                   a destination stay that brings together nature, comfort,
                   design and the cultural depth of Rajasthan.
                 </p>
@@ -587,27 +550,6 @@ export default function Home() {
                 ))}
               </div>
 
-              {/* Signature block */}
-              <div className="mt-10 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-6">
-                <div>
-                  <p className="text-[10px] tracking-[0.3em] uppercase text-charcoal/45 mb-2">
-                    Led by
-                  </p>
-                  <p className="font-[family-name:var(--font-display)] text-lg md:text-xl text-charcoal font-light">
-                    Mr. Abhishek Singh &middot; Mr. Vibhishek Singh &middot;{" "}
-                    Mr. Raunak Singh
-                  </p>
-                </div>
-                <a
-                  href="#leadership"
-                  className="shrink-0 group inline-flex items-center gap-3 text-[11px] tracking-[0.3em] uppercase text-gold hover:text-gold-dark border-b border-gold/40 pb-1 transition-colors"
-                >
-                  <span>Meet the Board</span>
-                  <span className="group-hover:translate-x-1 transition-transform duration-500">
-                    &rarr;
-                  </span>
-                </a>
-              </div>
             </div>
           </div>
 
@@ -644,8 +586,8 @@ export default function Home() {
             </div>
             <div className="md:col-span-7">
               <p className="font-[family-name:var(--font-display)] text-2xl md:text-3xl lg:text-4xl text-charcoal font-light leading-snug italic">
-                &ldquo;Asset-backed, guest-first and institutionally scalable
-                &mdash; a hospitality business built for the long term.&rdquo;
+                &ldquo;Asset-backed, guest-first and institutionally scalable.
+                A hospitality business built for the long term.&rdquo;
               </p>
             </div>
             <div className="md:col-span-3 text-right">
@@ -683,7 +625,7 @@ export default function Home() {
             <GoldDivider />
             <p className="mt-6 text-ivory/70 leading-relaxed font-light max-w-xl">
               Creating landmark destinations that combine regional character,
-              premium guest experience and long-term value — built once,
+              premium guest experience and long-term value, built once and
               stewarded for generations.
             </p>
           </div>
@@ -955,7 +897,7 @@ export default function Home() {
                 <div className="aspect-[16/10] relative overflow-hidden">
                   <Image
                     src={p.image}
-                    alt={`${p.city} — upcoming destination`}
+                    alt={`${p.city} upcoming destination`}
                     fill
                     sizes="(max-width: 768px) 100vw, 33vw"
                     className="object-cover opacity-45 group-hover:opacity-60 transition-opacity duration-700"
@@ -984,111 +926,6 @@ export default function Home() {
               </motion.article>
             ))}
           </div>
-        </div>
-      </Section>
-
-      {/* ─── LEADERSHIP ─── */}
-      <Section id="leadership" className="py-28 md:py-40 bg-ivory relative">
-        <div className="max-w-7xl mx-auto px-6 md:px-12">
-          <div className="text-center mb-20">
-            <p className="text-gold tracking-[0.3em] uppercase text-xs mb-4">
-              Board of Directors
-            </p>
-            <h2 className="font-[family-name:var(--font-display)] text-4xl md:text-5xl lg:text-6xl text-charcoal font-light">
-              The leadership behind{" "}
-              <span className="italic text-gold">AHPL</span>
-            </h2>
-            <div className="flex justify-center mt-6">
-              <GoldDivider center />
-            </div>
-            <p className="text-charcoal/55 max-w-2xl mx-auto mt-6 leading-relaxed">
-              Three directors, one platform — building AHPL into a hospitality
-              business that is asset-backed, guest-first and institutionally
-              scalable.
-            </p>
-          </div>
-
-          <div className="space-y-24">
-            {leadership.map((person, i) => (
-              <motion.div
-                key={person.name}
-                initial={{ opacity: 0, y: 40 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, margin: "-80px" }}
-                transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
-                className={`grid md:grid-cols-5 gap-12 md:gap-16 items-center ${
-                  i % 2 === 1 ? "md:[&>*:first-child]:order-2" : ""
-                }`}
-              >
-                <div className="md:col-span-2">
-                  <div className="relative">
-                    <div className="absolute -inset-3 border border-gold/25" />
-                    <div className="relative aspect-[4/5] overflow-hidden">
-                      {person.image ? (
-                        <Image
-                          src={person.image}
-                          alt={`Portrait of ${person.name}`}
-                          fill
-                          sizes="(max-width: 768px) 100vw, 40vw"
-                          className="object-cover"
-                        />
-                      ) : (
-                        <div className="relative w-full h-full bg-charcoal">
-                          <Image
-                            src="/effaro/private-courtyard.jpg"
-                            alt=""
-                            aria-hidden="true"
-                            fill
-                            sizes="(max-width: 768px) 100vw, 40vw"
-                            className="object-cover opacity-30 grayscale"
-                          />
-                          <div
-                            aria-hidden="true"
-                            className="absolute inset-0 bg-gradient-to-b from-charcoal/70 via-charcoal/60 to-charcoal/85"
-                          />
-                          <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-6">
-                            <span className="font-[family-name:var(--font-display)] text-gold-soft text-6xl md:text-7xl font-light italic">
-                              {person.initials}
-                            </span>
-                            <span
-                              aria-hidden="true"
-                              className="mt-5 mb-3 h-[1px] w-12 bg-gold-soft/40"
-                            />
-                            <p className="text-[10px] tracking-[0.4em] uppercase text-ivory/60">
-                              Portrait
-                            </p>
-                            <p className="text-[10px] tracking-[0.4em] uppercase text-ivory/45 mt-1">
-                              Forthcoming
-                            </p>
-                          </div>
-                        </div>
-                      )}
-                    </div>
-                    <div className="absolute -bottom-4 left-1/2 -translate-x-1/2 bg-ivory px-4 py-1">
-                      <p className="text-gold text-[10px] tracking-[0.3em] uppercase">
-                        {person.role}
-                      </p>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="md:col-span-3 space-y-5 text-charcoal/75 leading-relaxed">
-                  <h3 className="font-[family-name:var(--font-display)] text-3xl md:text-5xl text-charcoal font-light">
-                    {person.name}
-                  </h3>
-                  <GoldDivider />
-                  {person.bio.map((para, j) => (
-                    <p key={j}>{para}</p>
-                  ))}
-                </div>
-              </motion.div>
-            ))}
-          </div>
-
-          <p className="text-center text-charcoal/45 text-[11px] tracking-[0.25em] uppercase mt-24">
-            Management team details will be added as the hospitality portfolio
-            expands.
-          </p>
         </div>
       </Section>
 
@@ -1358,7 +1195,7 @@ export default function Home() {
               </span>
             </div>
             <p className="mt-6 text-sm text-ivory/55 max-w-xs leading-relaxed">
-              A Rajasthan-based hospitality development platform — building
+              A Rajasthan-based hospitality development platform building
               destination-led hotels and resorts across India.
             </p>
             <p className="mt-4 text-[11px] tracking-[0.3em] uppercase text-gold/70">

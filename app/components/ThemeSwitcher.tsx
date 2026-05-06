@@ -5,8 +5,8 @@ import { usePathname, useRouter } from "next/navigation";
 
 const themes = [
   { id: "theme-1", label: "01", name: "Royal Heritage", color: "#8B6914" },
-  { id: "theme-2", label: "02", name: "Into the Wild", color: "#2D5016" },
-  { id: "theme-3", label: "03", name: "Modern Elegance", color: "#D4C5A9" },
+  // { id: "theme-2", label: "02", name: "Into the Wild", color: "#2D5016" },
+  // { id: "theme-3", label: "03", name: "Modern Elegance", color: "#D4C5A9" },
 ];
 
 export default function ThemeSwitcher() {
